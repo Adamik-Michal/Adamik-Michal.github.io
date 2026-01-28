@@ -2,92 +2,60 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Michał Adamik - Specjalista diagnostyki samochodowej, systemów zabezpieczeń i AI w motoryzacji.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta property="og:title" content="Michał Adamik - Automotive Tech Expert">
-    <meta property="og:description" content="Ekspert systemów OBD, zabezpieczeń pojazdów oraz implementacji AI w diagnostyce.">
-    <meta property="og:image" content="images/preview.png">
-    <meta property="og:url" content="https://twoja-domena.pl/">
-    <meta property="og:type" content="website">
-
-    <title>Michał Adamik | Automotive Specialist</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <title>Michał Adamik | System Architect</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar floating">
-        <ul>
-            <li><a href="#about">O mnie</a></li>
-            <li><a href="#projects">Realizacje</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-            <li><a href="files/Certificates_en.pdf" target="_blank" rel="noopener noreferrer">Certyfikaty</a></li>
-        </ul>
-    </nav>
+    <div class="scanner-line"></div>
 
-    <header class="hero">
-        <video autoplay muted loop playsinline poster="media/hero-poster.png">
-            <source src="media/automotive-tech.webm" type="video/webm">
-            <source src="media/automotive-tech.mp4" type="video/mp4">
-        </video>
-        <div class="hero-overlay">
-            <h1>Michał Adamik</h1>
-            <p>Diagnostyka OBD • Zabezpieczenia Systemowe • AI Automotive</p>
-            <a href="#projects" class="btn">Zobacz moje projekty</a>
+    <main class="dashboard">
+        <header class="hex-glitch">
+            <h1 data-text="MICHAŁ ADAMIK">MICHAŁ ADAMIK</h1>
+            <p class="subtitle">Automotive Intelligence & Security Specialist</p>
+        </header>
+
+        <div class="grid-container">
+
+            <section class="card bio">
+                <div class="card-header">SYSTEM_INFO</div>
+                <p>Ekspert w fuzji mechaniki precyzyjnej i cyfrowego bezpieczeństwa. Łączę świat diagnostyki OBD z zaawansowaną analityką AI.</p>
+                <div class="status-bar"><div class="fill"></div></div>
+            </section>
+
+            <section class="card skills-main">
+                <div class="card-header">CORE_COMPETENCIES</div>
+                <div class="skill-tag">DIAGNOSTYKA OBD (LAUNCH)</div>
+                <div class="skill-tag">AI & DATA ANALYSIS</div>
+                <div class="skill-tag">PC ARCHITECTURE & SERVICE</div>
+                <div class="skill-tag">CYBERSECURITY & ENCRYPTION</div>
+                <div class="skill-tag">ECU PROGRAMMING</div>
+            </section>
+
+            <section class="card interactive">
+                <input type="radio" name="tab" id="tab1" checked>
+                <input type="radio" name="tab" id="tab2">
+
+                <div class="tab-nav">
+                    <label for="tab1">SPECJALIZACJA</label>
+                    <label for="tab2">KONTAKT</label>
+                </div>
+
+                <div class="tab-content content1">
+                    <ul>
+                        <li>Implementacja AI w predykcji usterek</li>
+                        <li>Zabezpieczenia anty-hackingowe w CAN-BUS</li>
+                        <li>Budowa stacji diagnostycznych</li>
+                    </ul>
+                </div>
+                <div class="tab-content content2">
+                    <p>LOCATION: Poland, EU</p>
+                    <p>EMAIL: michal.adamik@proton.me</p>
+                    <a href="#" class="connect-btn">ZAINICJUJ POŁĄCZENIE</a>
+                </div>
+            </section>
+
         </div>
-        <div class="scroll-down">
-            <span class="scroll-mover">
-                <span class="scroll-chev"></span>
-            </span>
-        </div>
-    </header>
-
-    <section id="about" class="about">
-        <div class="container">
-            <img src="images/profile.png" alt="Michał Adamik" class="profile-pic">
-            <div>
-                <h2>Nowoczesna Mechanika i Technologia</h2>
-                <p>
-                    Specjalizuję się w zaawansowanej diagnostyce pojazdowej przy użyciu systemów **OBD Launch** oraz wdrażaniu nowoczesnych systemów zabezpieczeń. Moje podejście do mechaniki łączy tradycyjną wiedzę z najnowszymi osiągnięciami **AI**, co pozwala na precyzyjną analizę danych z czujników i przewidywanie potencjalnych usterek (predictive maintenance).
-                </p>
-                <p>
-                    Pasjonuję się cyberbezpieczeństwem w sektorze motoryzacyjnym oraz optymalizacją systemów sterowania silnikiem (ECU).
-                </p>
-                <ul class="skills">
-                    <li>Diagnostyka OBD Launch</li>
-                    <li>Programowanie sterowników</li>
-                    <li>Zabezpieczenia antykradzieżowe</li>
-                    <li>Analiza danych AI</li>
-                    <li>Systemy ADAS</li>
-                    <li>Elektronika pojazdowa</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Kluczowe Realizacje</h2>
-            <div id="project-list" class="project-grid">
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <section id="contact">
-            <h2>Kontakt</h2>
-            <div class="container social-icons">
-                <a href="https://github.com/twoj-login" target="_blank"><img src="icons/github.svg" alt="GitHub"></a>
-                <a href="https://www.linkedin.com/in/twoj-linkedin/" target="_blank"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
-                <a href="https://www.facebook.com/twoj-profil" target="_blank"><img src="icons/facebook.svg" alt="Facebook"></a>
-                <p>Email: michal.adamik@przyklad.pl</p>
-            </div>
-            <p>&copy; 2026 Michał Adamik - Automotive Solutions</p>
-        </section>
-    </footer>
-
-    <script src="projects.js" defer></script>
-    <script src="scrollHint.js" defer></script>
+    </main>
 </body>
 </html>
